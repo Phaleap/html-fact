@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+ padding: 0;
+ transition: 0.5s ease-in-out;
+
+ 
+ }
+ header {
+   width: 100%;
+   background-color: transparent;
+   padding: 20px 0;
+ }
+ 
+ .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+ }
+ .img-logo {
+ width: 150px ;
+  height: auto;
+border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+ }
+ .nav-links {
+ display: inline-block;
+ 
+ }
+ .nav-links ul {
+   list-style: none;
+   display: flex;
+   gap: 30px;
+   padding: 0;
+   margin: 0;
+ }
+ .nav-links ul > li {
+ font-size: 25px;
+ 
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: black;
+ font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 20px;
+ 
+
+ }
+ .nav-links a:hover {
+     background-color: black;
+     width: auto;
+     height: auto;
+     border-radius: 20px;
+     padding: 20px;
+     color: white;
+     transition: 0.3s ease;
+     font-family: "Monoton", sans-serif;
+     position: relative;
+     text-transform: uppercase;
+     font-size: 18px;
+ }
+ .welcome center {
+     font-size: 50px;
+     font-family: "Cal Sans", sans-serif;
+     font-weight: 700;
+     position: relative;
+     justify-content: center;
+ }
+ #welcome-img {
+     width: 50%;
+     height: auto;
+     border-radius: 50px;
+     padding: 20px;
+     display: block;
+     margin: 0 auto;
+     margin-top: 50px;
+ }
+     .intro-container {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 30px;
+         margin-top: 100px;
+     }
+     
+     #introducing {
+         width: 40%;
+         height: auto;
+         border-radius: 30px;
+         padding: 20px;
+     }
+     
+     .intro-txt {
+         width: 40%;
+         font-size: 18px;
+         line-height: 2;
+         font-family: "Cal Sans", sans-serif;
+         margin-left: 20px;
+     }
+/* Fade and slide in */
+@keyframes fadeSlide {
+ 0% {
+   opacity: 0;
+   transform: translateY(50px);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0);
+ }
+}
+
+/* Scale pop animation */
+@keyframes popIn {
+ 0% {
+   opacity: 0;
+   transform: scale(0.8);
+ }
+ 100% {
+   opacity: 1;
+   transform: scale(1);
+ }
+}
+
+.qs1, .qs2, .qs3, .qs4,.carousel, .intro-container, .text, .qs5,.video, .cards-container, .qs6  {
+ opacity: 0;
+ transform: translateY(50px);
+ transition: all 0.2s ease-out;
+ margin-top: 400px;
+ margin-bottom: 300px;
+}
+.qs1, .qs2, .qs3, .qs4, .qs5, .qs6 {
+ font-size: 100px;
+ font-family: "Cal Sans", sans-serif;
+}
+.qs4 {
+ margin-bottom: 500px;
+}
+.intro-txt {
+ font-size: 20px;
+}
+
+/* Active class when in view */
+.show {
+ opacity: 1;
+ transform: translateY(0);
+}
+.text {
+ 
+ line-height: 2;
+ position: relative;
+ margin-top: -200px;
+ margin-left: 100px;
+ margin-right: 100px;
+ text-align: center;
+font-family: "Cascadia Mono", sans-serif; 
+font-size: 18px;
+font-weight: bold;
+}
+.video {
+  margin-top: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.video video {
+
+  border-radius: 10px;
+
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* This makes all cards the same height */
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cards-container > div {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; /* Makes it stack image and body properly */
+}
+
+.cards-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cards-container .card-body {
+  padding: 15px;
+  flex-grow: 1; /* Makes all card-bodies grow equally */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cooperation {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.cooperation #pic1, #pic2, #pic3 {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 200px;
+
+}
+#pic1, #pic2, #pic3 {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+}
+
+#pic1.show, #pic2.show, #pic3.show {
+  opacity: 1;
+  transform: scale(1);
+}
+.container2 {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+}
